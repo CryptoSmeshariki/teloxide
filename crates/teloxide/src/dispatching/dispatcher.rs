@@ -334,7 +334,7 @@ where
     ///  - [`crate::types::Me`] (can be used in [`HandlerExt::filter_command`]).
     ///
     /// [`HandlerExt::filter_command`]: crate::dispatching::HandlerExt::filter_command
-    pub async fn dispatch(&mut self)
+    pub async fn dispatch(mut self)
     where
         R: Requester + Clone,
         <R as Requester>::GetUpdates: Send,
