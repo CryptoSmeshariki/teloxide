@@ -55,6 +55,8 @@ impl_payload! {
             pub send_email_to_provider: bool,
             /// Pass _True_, if the final price depends on the shipping method
             pub is_flexible: bool,
+            /// subscription_period
+            pub subscription_period: u32
         }
     }
 }
