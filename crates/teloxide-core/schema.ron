@@ -4150,6 +4150,12 @@ Schema(
                     ty: Option(bool),
                     descr: Doc(md: "Pass _True_, if the final price depends on the shipping method")
                 ),
+                Param(
+                    name: "subscription_period",
+                    ty: Option(u32),
+                    descr: Doc(md: "Pass _True_, if the final price depends on the shipping method")
+                ),
+                
             ],
         ),
         Method(
